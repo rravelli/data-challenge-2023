@@ -15,7 +15,7 @@ def export_to_csv(y_predict: ndarray, file_name: str):
     df.index += 1
     df.index = df.index.astype("str")
     df.to_csv(
-        f"export/{file_name}.csv",
+        f"./../../export/{file_name}.csv",
         sep=",",
         index=True,
         doublequote=True,
